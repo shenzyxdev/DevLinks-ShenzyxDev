@@ -1,0 +1,174 @@
+/*body {
+    background-image: url(./Assests/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    }*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text-color: white;
+    --bg-url: url(./Assests/bg-mobile.jpg);
+    --stroke-color: rgba(255, 255, 255, 0.5);
+    --surface-color: rgba(255, 255, 255, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(255, 255, 255, 0.2);
+    --switch-bg-url: url(./Assests/MoonStars.svg);
+}
+
+.light{
+    --text-color: black;
+    --bg-url: url(./Assests/bg-mobile-light.jpg);
+    --stroke-color: rgba(0, 0, 0, 0.5);
+    --surface-color: rgba(0, 0, 0, 0.05);
+    --surface-color-hover: rgba(0, 0, 0, 0.02);
+    --highlight-color: rgba(0, 0, 0, 0.1);
+    --switch-bg-url: url(./Assests/Sun.svg);
+
+}
+
+    body {
+        background: var(--bg-url) no-repeat top center/cover;
+    }
+
+body * {
+  
+      font-family: "Inter", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      color: var(--text-color);
+    }
+
+    #container {
+        width: 360px;
+        /*margin-right: auto;
+        margin-left: auto;
+        margin-bottom: auto;*/
+        margin: auto; 
+        padding-top: 56px;
+        container: 0px 24px;
+    }
+/*da pra alinhar de 2 formas elementos inline, 
+img é um elemento inline text-align: center; 
+ou da forma que vou fazer no código abaixo*/
+
+/*profile*/
+
+    #profile img {
+        width: 112px;
+        display: block;
+        margin: auto;
+    }
+
+#profile p {
+    text-align: center;
+    padding: 24px;
+    margin-top: 8px;
+}
+
+/*switch*/
+
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+
+#switch button {
+    width: 32px;
+    height: 32px;
+    background: white var(--switch-bg-url) no-repeat center;
+    border: 0px;
+    border-radius: 50%;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.light #switch button {
+    right: 0;
+    left: initial;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
+/*lista - links*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 16px 24px;
+
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-weight: 500;
+
+    transition: background 0.2s; 
+}
+
+/*pseudo-selector*/
+ul li a:hover {
+    background: var(--surface-color-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+#social-links {
+    display: flex;
+    padding: 24px 0;
+    font-size: 24px;
+    justify-content: center;
+}
+
+ul {
+    padding: 24px 0;
+}
+
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    background: var(--highlight-color);
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+}
