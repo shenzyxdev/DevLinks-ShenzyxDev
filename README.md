@@ -44,4 +44,10 @@ Esse projeto está sob a licença MIT.
 
 ---
 
+<<<<<<< HEAD
 Feito com ♥ by shenzy
+=======
+Feito com ♥ by shenzy
+
+=======
+>>>>>>> 6e2ed64a96b06c16c82406098b73bf69a96f903f
