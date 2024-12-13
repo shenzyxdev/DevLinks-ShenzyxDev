@@ -47,7 +47,3 @@ Esse projeto está sob a licença MIT.
 Feito com ♥ by shenzy
 
 =======
-# Meu primeiro projeto criado com
-# ajuda do curso discovery 
-# da rocketseat
->>>>>>> 8867dc2f5ddec4c3aa23b601305e9497e0a91e7e
