@@ -33,6 +33,7 @@
 
     body {
         background: var(--bg-url) no-repeat top center/cover;
+        height: 100vh;
     }
 
 body * {
@@ -46,14 +47,12 @@ body * {
 
     #container {
         width: 100%;
-        max-width: 588px;
-    
+        max-width: 700px;
         /*margin-right: auto;
         margin-left: auto;
         margin-bottom: auto;*/
-        margin: auto; 
-        padding-top: 56px;
-        container: 0px 24px;
+        margin: 56px auto 0px;
+        padding: 0 24px;
     }
 /*da pra alinhar de 2 formas elementos inline, 
 img é um elemento inline text-align: center; 
@@ -173,4 +172,12 @@ footer {
     padding: 24px;
     text-align: center;
     font-size: 14px;
+}
+@media (min-width: 700px) {
+    :root {
+        --bg-url: url(./assests/bg-desktop.jpg);
+    }
+    .light {
+        --bg-url: url(./assests/bg-desktop-light.jpg);
+    }
 }
