@@ -92,12 +92,17 @@ ou da forma que vou fazer no código abaixo*/
     z-index: 1;
     top: 50%;
     transform: translateY(-50%);
+    animation: slide-out 0.2s; 
 }
 
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.2s forwards;
 }
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
+}
+
 
 #switch span {
     display: block;
@@ -179,5 +184,27 @@ footer {
     }
     .light {
         --bg-url: url(./assests/bg-desktop-light.jpg);
+    }
+}
+
+/*animação*/
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 50%
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+
+    to { 
+       left: 0; 
     }
 }
