@@ -42,12 +42,5 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 Esse projeto está sob a licença MIT.
 
----
+# Feito com ♥ by shenzy
 
-<<<<<<< HEAD
-Feito com ♥ by shenzy
-=======
-Feito com ♥ by shenzy
-
-=======
->>>>>>> 6e2ed64a96b06c16c82406098b73bf69a96f903f
